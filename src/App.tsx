@@ -1,5 +1,11 @@
+import { Navigation } from "./components/Navigation/Navigation";
+
 function App() {
-  return <div>Hello</div>;
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 }
 
 export default App;

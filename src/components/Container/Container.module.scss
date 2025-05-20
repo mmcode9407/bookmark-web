@@ -1,0 +1,10 @@
+﻿@import '../../styles/mixins.scss';
+
+.container {
+  position: relative;
+  padding: 3rem 2.5rem;
+
+  @include desktop {
+    padding: 4rem 2.5rem;
+  }
+}

@@ -1,0 +1,23 @@
+﻿.socials {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: auto;
+  padding-bottom: 3rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & svg path {
+        transition: fill 0.3s ease;
+    }
+
+    &:hover {
+      svg path{
+        fill: var(--light-red);
+      }
+    }
+  }
+}
