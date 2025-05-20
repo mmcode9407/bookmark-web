@@ -1,9 +1,14 @@
-﻿.socials {
+﻿@import "../../styles/mixins.scss";
+
+.socials {
   display: flex;
   justify-content: center;
   gap: 3rem;
   margin-top: auto;
-  padding-bottom: 3rem;
+
+  @include desktop {
+    margin-top: 0;
+  }
 
   a {
     display: flex;

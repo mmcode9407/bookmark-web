@@ -1,0 +1,62 @@
+@import "../../styles/mixins.scss";
+
+.footer {
+  background-color: #242a45;
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem
+  }
+
+  .nav {
+    .navList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include desktop {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem
+      }
+
+      li {
+        text-align: center;
+
+        a {
+          display: block;
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.6rem;
+          letter-spacing: 0.2rem;
+          padding: 1.5rem 0;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--light-red);
+          }
+        }
+      }
+    }
+  }
+}
