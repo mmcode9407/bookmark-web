@@ -23,6 +23,10 @@ body {
   color: var(--dark-blue);
 }
 
+html {
+  interpolate-size: allow-keywords;
+}
+
 body {
   min-height: 100vh;
 }
