@@ -1,4 +1,5 @@
 import { Footer } from "./components/Footer/Footer";
+import { Hero } from "./components/Hero/Hero";
 import { Navigation } from "./components/Navigation/Navigation";
 
 function App() {
@@ -6,7 +7,9 @@ function App() {
     <>
       <Navigation />
 
-      <main style={{ height: "100vh" }}></main>
+      <main>
+        <Hero />
+      </main>
 
       <Footer />
     </>
