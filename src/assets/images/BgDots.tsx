@@ -1,6 +1,6 @@
 ﻿export const BgDots = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="280" height="4">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 4">
       <path
         fill="#495DCF"
         fill-opacity=".2"
