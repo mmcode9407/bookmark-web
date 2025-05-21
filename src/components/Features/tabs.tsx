@@ -1,8 +1,9 @@
 ﻿import feature1 from "../../assets/images/illustration-features-tab-1.svg";
 import feature2 from "../../assets/images/illustration-features-tab-2.svg";
 import feature3 from "../../assets/images/illustration-features-tab-3.svg";
+import type { Tab } from "./types";
 
-export const tabs = [
+export const tabs: Tab[] = [
   {
     id: 0,
     title: "Simple Bookmarking",
