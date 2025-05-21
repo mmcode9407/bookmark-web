@@ -1,0 +1,71 @@
+﻿@import "../../../styles/mixins.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+  @include desktop {
+    flex-direction: row;
+    max-width: 400px;
+  }
+
+  .inputContainer {
+    position: relative;
+    flex-grow: 1;
+
+    .inputWrapper {
+      position: relative;
+      width: 100%;
+
+      input {
+        width: 100%;
+        padding: 1.5rem 1.2rem;
+        border-radius: 0.5rem;
+        border: none;
+        font-size: 1.4rem;
+  
+        &.invalid {
+          border: 2px solid var(--light-red);
+        }
+
+        &::placeholder {
+          color: var(--gray);
+        }
+      }
+  
+      svg {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+      }
+    }
+
+
+    .errorMessage {
+      padding: 0.5rem 1rem;
+      margin-top: -0.2rem;
+      background-color: var(--light-red);
+      color: #fff;
+      font-size: 1.2rem;
+      border-radius: 0 0 0.5rem 0.5rem;
+      font-style: italic;
+      text-align: left;
+    }
+  }
+
+  .successMessage {
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+}

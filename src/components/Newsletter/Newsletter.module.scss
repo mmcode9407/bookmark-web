@@ -1,0 +1,34 @@
+@import "../../styles/mixins.scss";
+
+.newsletter {
+  background-color: var(--light-blue);
+  overflow: hidden;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #fff;
+
+    @include desktop {
+      font-size: 3rem;
+    }
+  }
+
+  & p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+}

@@ -3,7 +3,7 @@
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   className?: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "tertiary";
 }
 
 export const Button = ({

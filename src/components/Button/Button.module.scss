@@ -36,4 +36,15 @@
         }
     }
 
+    &.tertiary {
+        background-color: var(--light-red);
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: var(--light-red);
+            border-color: var(--light-red);
+        }
+    }
+
 }
