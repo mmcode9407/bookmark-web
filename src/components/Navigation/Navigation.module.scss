@@ -1,0 +1,25 @@
+﻿@use "../../styles/mixins.scss" as *;
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.desktopNav {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}

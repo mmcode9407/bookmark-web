@@ -1,0 +1,28 @@
+﻿@use "../../styles/mixins.scss" as *;
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: auto;
+
+  @include desktop {
+    margin-top: 0;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & svg path {
+      transition: fill 0.3s ease;
+    }
+
+    &:hover {
+      svg path {
+        fill: var(--light-red);
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+﻿@use "../../../styles/mixins.scss" as *;
+
+.hamburgerBtn {
+  padding: 1rem;
+  z-index: 10;
+
+  @include desktop {
+    display: none;
+  }
+}

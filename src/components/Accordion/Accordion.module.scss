@@ -1,0 +1,66 @@
+.accordionList {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.accordionItem {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    h3 {
+      color: var(--light-red);
+    }
+  }
+
+  &:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.accordionQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+
+  & h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+    transition: color 0.3s ease;
+  }
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  color: var(--light-blue);
+
+  &[data-state="open"] {
+    transform: rotate(180deg);
+  }
+}
+
+.accordionAnswer {
+  overflow: clip;
+  transition: height 300ms ease;
+
+  &[data-state="closed"] {
+    height: 0px;
+  }
+
+  &[data-state="open"] {
+    height: auto;
+  }
+
+  & p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--gray);
+    padding-bottom: 1.5rem;
+  }
+}

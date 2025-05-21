@@ -1,0 +1,88 @@
+﻿@use "../../../styles/mixins.scss" as *;
+
+.featureContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  margin-top: 4rem;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4rem auto;
+    gap: 6rem;
+  }
+}
+
+.featureImageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+
+  & img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 3rem 2.5rem;
+    z-index: 1;
+  }
+
+  .blueBg {
+    position: absolute;
+    bottom: -2rem;
+    left: -30%;
+    width: 100%;
+    height: 80%;
+    background-color: var(--light-blue);
+    border-bottom-right-radius: 10rem;
+    z-index: 0;
+  }
+}
+
+.featureContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 500px;
+  margin: 6rem auto;
+  padding: 3rem 2.5rem;
+  text-align: center;
+
+  @include desktop {
+    align-items: flex-start;
+    text-align: left;
+    margin: 0;
+  }
+
+  & h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+
+    @include desktop {
+      font-size: 3rem;
+    }
+  }
+
+  & p {
+    color: var(--gray);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+
+    @include desktop {
+      font-size: 1.8rem;
+    }
+  }
+
+  .buttonContainer {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+﻿@use "../../../styles/mixins.scss" as *;
+
+.navigationList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+
+  li {
+    text-align: center;
+    border-top: 1px solid var(--gray);
+
+    a {
+      display: block;
+      padding: 2rem 0;
+      font-size: 1.6rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-weight: 400;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--light-red);
+      }
+    }
+  }
+
+  @include desktop {
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+    gap: 4rem;
+
+    li {
+      border: none;
+
+      &:last-child {
+        padding: 0;
+      }
+
+      a {
+        padding: 1rem;
+        font-size: 1.4rem;
+        color: var(--dark-blue);
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}
