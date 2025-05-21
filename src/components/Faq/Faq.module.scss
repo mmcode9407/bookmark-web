@@ -1,4 +1,4 @@
-@import "../../styles/mixins.scss";
+@use "../../styles/mixins.scss" as *;
 
 .faqSection {
   overflow: hidden;
@@ -51,10 +51,10 @@
   font-size: 1.4rem;
   font-weight: 500;
   transition: background-color 0.3s ease;
-  
+
   &:hover {
     background-color: transparent;
     border: 2px solid var(--light-blue);
     color: var(--light-blue);
   }
-} 
+}

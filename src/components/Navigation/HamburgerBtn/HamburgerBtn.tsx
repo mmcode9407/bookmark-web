@@ -15,8 +15,7 @@ export const HamburgerBtn = ({
     <button
       className={styles.hamburgerBtn}
       onClick={onClick}
-      aria-label={ariaLabel}
-    >
+      aria-label={ariaLabel}>
       {children}
     </button>
   );

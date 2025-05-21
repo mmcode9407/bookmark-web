@@ -1,4 +1,4 @@
-﻿@import "../../../styles/mixins.scss";
+﻿@use "../../../styles/mixins.scss" as *;
 
 .form {
   display: flex;
@@ -28,7 +28,7 @@
         border-radius: 0.5rem;
         border: none;
         font-size: 1.4rem;
-  
+
         &.invalid {
           border: 2px solid var(--light-red);
         }
@@ -37,7 +37,7 @@
           color: var(--gray);
         }
       }
-  
+
       svg {
         position: absolute;
         top: 50%;
@@ -45,7 +45,6 @@
         transform: translateY(-50%);
       }
     }
-
 
     .errorMessage {
       padding: 0.5rem 1rem;

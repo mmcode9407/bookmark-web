@@ -1,4 +1,4 @@
-﻿@import "../../../styles/mixins.scss";
+﻿@use "../../../styles/mixins.scss" as *;
 
 .navigationList {
   display: flex;
@@ -8,7 +8,7 @@
   li {
     text-align: center;
     border-top: 1px solid var(--gray);
-    
+
     a {
       display: block;
       padding: 2rem 0;
@@ -33,11 +33,11 @@
 
     li {
       border: none;
-      
+
       &:last-child {
         padding: 0;
       }
-      
+
       a {
         padding: 1rem;
         font-size: 1.4rem;

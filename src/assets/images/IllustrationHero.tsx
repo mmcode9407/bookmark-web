@@ -3,8 +3,7 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 657 466"
-    >
+      viewBox="0 0 657 466">
       <defs>
         <filter
           id="a"
@@ -12,8 +11,7 @@
           height="126.9%"
           x="-9%"
           y="-5.7%"
-          filterUnits="objectBoundingBox"
-        >
+          filterUnits="objectBoundingBox">
           <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
           <feGaussianBlur
             in="shadowOffsetOuter1"
@@ -37,8 +35,7 @@
           height="139%"
           x="-13%"
           y="-11.7%"
-          filterUnits="objectBoundingBox"
-        >
+          filterUnits="objectBoundingBox">
           <feOffset dy="30" in="SourceAlpha" result="shadowOffsetOuter1" />
           <feGaussianBlur
             in="shadowOffsetOuter1"
@@ -55,8 +52,7 @@
           x1="99.013%"
           x2="2.544%"
           y1="71.675%"
-          y2="29.014%"
-        >
+          y2="29.014%">
           <stop offset="0%" stop-color="#151515" />
           <stop offset="100%" stop-color="#3D3D3D" />
         </linearGradient>
@@ -66,8 +62,7 @@
         fill="none"
         fill-rule="evenodd"
         filter="url(#a)"
-        transform="translate(39 9)"
-      >
+        transform="translate(39 9)">
         <g transform="translate(.5 .5)">
           <g fill-rule="nonzero">
             <use fill="#000" filter="url(#b)" xlinkHref="#c" />

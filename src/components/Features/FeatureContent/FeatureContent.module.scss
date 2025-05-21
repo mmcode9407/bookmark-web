@@ -1,4 +1,4 @@
-﻿@import "../../../styles/mixins.scss";
+﻿@use "../../../styles/mixins.scss" as *;
 
 .featureContentContainer {
   display: flex;
@@ -10,8 +10,7 @@
   @include desktop {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1100px;
-    margin: 6rem auto;
+    margin: 4rem auto;
     gap: 6rem;
   }
 }

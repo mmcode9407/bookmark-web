@@ -1,6 +1,8 @@
-﻿@import "../../styles/mixins.scss";
+﻿@use "../../styles/mixins.scss" as *;
 
 .features {
+  max-width: 1440px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -89,5 +91,3 @@
     }
   }
 }
-
-

@@ -1,4 +1,4 @@
-﻿@import "../../styles/mixins.scss";
+﻿@use "../../styles/mixins.scss" as *;
 
 .socials {
   display: flex;
@@ -14,13 +14,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     & svg path {
-        transition: fill 0.3s ease;
+      transition: fill 0.3s ease;
     }
 
     &:hover {
-      svg path{
+      svg path {
         fill: var(--light-red);
       }
     }
